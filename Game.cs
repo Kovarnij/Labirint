@@ -12,6 +12,7 @@ namespace Labirint
         {
             Room rooms = new Room(0, 0);
             Room temp = rooms;
+
             
             temp.AddRight(2, 2);
             temp = temp.Left;

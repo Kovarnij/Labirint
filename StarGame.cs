@@ -11,27 +11,27 @@ namespace Labirint
     {
         public StarGame()
         {
-            Console.WriteLine("(Голос) Fnhjui21Xnuii91");
+            //Console.WriteLine("(Голос) Fnhjui21Xnuii91");
             //Thread.Sleep(3000);
-            Console.WriteLine("(Голос) nvcujreiня nuce9шь");
+            //Console.WriteLine("(Голос) nvcujreiня nuce9шь");
             //Thread.Sleep(5000);
-            Console.Write("(Голос) Ты меня понимаешь? (Да/Нет)");
-            string ans = Console.ReadLine();
-            if (ans == "Нет") 
-            {
-                Console.WriteLine("(Голос) Он притворяется, уже в который раз. Произвести стирание сознание.");
-                GameOver gameOver = new GameOver();
-            }
-            else if (ans == "Да")
-            {
-                Console.WriteLine("(Голос) Вставай!");
-                Game game = new Game();
-            }
-            else
-            {
-                Console.WriteLine("(Голос) Он слишком глуп, чтобы ответить правильно. Произвести стирание сознание.");
-                GameOver gameOver = new GameOver();
-            }
+            //Console.Write("(Голос) Ты меня понимаешь? (Да/Нет)");
+            //string ans = Console.ReadLine();
+            //if (ans == "Нет") 
+            //{
+            //    Console.WriteLine("(Голос) Он притворяется, уже в который раз. Произвести стирание сознание.");
+            //    GameOver gameOver = new GameOver();
+            //}
+            //else if (ans == "Да")
+            //{
+            //    Console.WriteLine("(Голос) Вставай!");
+            Game game = new Game();
+            //}
+            //else
+            //{
+            //    Console.WriteLine("(Голос) Он слишком глуп, чтобы ответить правильно. Произвести стирание сознание.");
+            //    GameOver gameOver = new GameOver();
+            //}
         }
     }
 }

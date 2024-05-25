@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Labirint.Monsters;
 
 namespace Labirint
 {
-    internal class Room
+    public class Room
     {
         public int Chest { get; private set; }
-        public int Monster { get; private set; }
+        public List<IMonster> Monsters { get; private set; }
         public Room? Left { get; private set; } 
         public Room? Right { get; private set; }
         public Room? Root { get; private set; }
@@ -26,10 +27,10 @@ namespace Labirint
             Right.Root = this;
         }
 
-        public Room( int chest, int monster)
+        public Room( int chest, int monsterCount)
         {
             Chest = chest;
-            Monster = monster;
+            Monsters = MonstersFactory.GetMonsters(monsterCount);
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Labirint.States;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,13 +11,13 @@ namespace Labirint
     {
         public Game()
         {
-            Room rooms = new Room(0, 0);
-            Room temp = rooms;
+            Player player = new Player(FillingRoom.CreateRooms());
+            GameContext context = new GameContext(new LookUpState());
 
-            
-            temp.AddRight(2, 2);
-            temp = temp.Left;
-            temp = temp.Root;   
+            while (true)
+            {
+                context.HandleState(player);
+            }
         }
     }
 }
